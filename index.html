@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Javascript Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="main">
+          <header><h1>TASK MANAGER</h1></header>
+          <div class="text_input"> Enter your task here</div>
+          <form name="formSaisie">
+              <input type="text" class="todo-input" placeholder="Enter your task" name="titre"/>
+              <button class="todo-button" type="submit" onclick="ajouter()">
+                  <i class="fas fa-pencil"></i>
+              </button>
+          </form>
+          <div class="text_list">
+            <h4>Your task list is here</h4>
+        </div>
+         <div class="todo-container">
+             <ul class="todo-list"></ul>
+         </div>
+    </div>  
+    <script src="script.js"></script>
+  </body>
+</html>
